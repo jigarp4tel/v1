@@ -63,7 +63,7 @@ let swiper = new Swiper(".portfolio__container", {
     },
     breakpoints: {
         568: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         }
     }
 });
