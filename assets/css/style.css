@@ -389,20 +389,28 @@ img {
   margin-bottom: var(--mb-2-5);
 }
 
-.about__info-title {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+.about__info-name {
+  position: relative;
+  padding-left: 20px;
+
+  font-size: var(--small-font-size);
 }
 
-.about__info-name {
-  font-size: var(--smaller-font-size);
+.about__info-name::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  color: var(--text-color);
+  font-size: var(--fz-sm);
+  line-height: 12px;
 }
 
 .about__info-title,
 .about__info-name {
+  color: var(--text-color);
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .about__buttons {
